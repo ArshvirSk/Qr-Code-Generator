@@ -1,0 +1,118 @@
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--font-color: 230 35% 7%;
+}
+
+body {
+	padding-top: 10em;
+	color: hsl(var(--font-color));
+	background: linear-gradient(to right, rgb(139, 128, 69), rgb(104, 171, 140), rgb(71, 201, 169));
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.section {
+	padding: 2em 0;
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+}
+
+.container {
+	margin-inline: auto;
+	max-width: 75rem;
+	width: 85%;
+}
+
+.input__group {
+	display: flex;
+	margin-top: 2em;
+	justify-content: center;
+}
+
+.QR {
+	display: flex;
+	justify-content: center;
+}
+
+#qrCode {
+	background-color: white;
+	border: 5px white solid;
+	border-radius: 15px;
+}
+
+.DownloadBT {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
+
+label {
+	display: block;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+input {
+	width: 100%;
+	padding: 1em 0.75em;
+	border: 1px solid #444343;
+	border-radius: 20px;
+	margin-bottom: 2em;
+	margin-top: 0.75em;
+	outline: none;
+	border: none;
+}
+
+button {
+	border: unset;
+	background: hsl(231, 77%, 90%);
+	padding: 1em 0.75em;
+	color: hsl(var(--font-color));
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 20px;
+	transition: 0.3s ease-in-out;
+}
+
+button:hover {
+	background: hsl(231, 77%, 50%);
+	color: aliceblue;
+	text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+	.section {
+		padding: 0;
+	}
+
+	input {
+		margin: 0;
+	}
+
+	.qrcode__generator {
+		display: flex;
+		align-items: center;
+	}
+
+	input {
+		margin-bottom: 2em;
+		margin-top: 0.75em;
+		font-size: 1rem;
+	}
+}
